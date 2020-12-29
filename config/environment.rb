@@ -12,4 +12,5 @@ ActionMailer::Base.smtp_settings = {
   :domain         => 'whispering-thicket-22107.herokuapp.com',
   :authentication => :plain,
 }
+
 ActionMailer::Base.delivery_method = :smtp

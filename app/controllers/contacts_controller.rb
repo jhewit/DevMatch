@@ -12,10 +12,10 @@ class ContactsController < ApplicationController
            ContactMailer.contact_email(name, email, body).deliver
            
            flash[:success] = "Message sent."
-           redirect_to new_contact_path
+           redirect_to contact_us_path
        else
            flash[:danger] = @contact.errors.full_messages.join(", ")
-           redirect_to new_contact_path
+           redirect_to contact_us_path
        end
    end
    
